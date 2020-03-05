@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/navbar';
 import Footer from './components/Footer/Footer'
 import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
-import DropdownButton from 'react-bootstrap/DropdownButton';
+import DropdownCategories from './components/DropdownCategories/dropdown'
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
     <div className="App">
 
       <Navbar />
+      <DropdownCategories />
       <AppCapitals/>
       <Footer />
 

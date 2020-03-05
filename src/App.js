@@ -1,13 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar/navbar';
+import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
 
 function App() {
   return (
     <div className="App">
       
-      < Navbar />
+       <Navbar/> 
+
+      <AppCapitals/>
 
     </div>
   );

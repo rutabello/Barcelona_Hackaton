@@ -1,0 +1,12 @@
+.toggle {
+  background-color: grey !important;
+  border: none !important;
+  text-align: left !important;
+  border-radius: 0 !important;
+  display: inline-block;
+  float: left;
+}
+
+.no-pad {
+  padding: 0px !important;
+}

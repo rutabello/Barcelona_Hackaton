@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import BigBoard from './App';
 import * as serviceWorker from './serviceWorker';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 ReactDOM.render(<BigBoard />, document.getElementById('root'));
 

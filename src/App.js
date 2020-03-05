@@ -1,11 +1,16 @@
 import React from 'react';
 import './App.css';
-import GamesSection from './Components/GamesSection'
+import Navbar from './components/Navbar/navbar';
+import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
 
 function App() {
   return (
     <div className="App">
-      <GamesSection />
+      
+       <Navbar/> 
+
+      <AppCapitals/>
+
     </div>
   );
 }

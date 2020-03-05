@@ -1,0 +1,26 @@
+/* Title /game section */
+
+#games-section {
+    display: inline-block;
+    padding-top: 30px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 11%;
+}
+
+#games-title {
+    display: flex;
+    border-bottom: 1px solid #bcbcbc;
+    padding-bottom: 10px;
+    margin: 0 auto;
+}
+
+#inv-title {
+    letter-spacing: normal;
+    line-height: 1;
+    margin: 0;
+    text-align: center;
+    text-transform: capitalize;
+    flex-grow: 1;
+}
+

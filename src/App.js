@@ -1,5 +1,6 @@
 import React from 'react';
-import SmallSquare from './components/SmallSquare'
+import './App.css';
+import SmallSquare from './components/SmallSquare/SmallSquare'
 
 
 

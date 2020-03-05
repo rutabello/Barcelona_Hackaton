@@ -1,0 +1,26 @@
+
+.cuadro {
+    margin: 30px;
+    height: 520px;
+    width: 700px;
+    background-color: #466996;
+    border: 5px solid  #914A8B;
+    border-radius: 5px;
+}
+.imagenes {
+    margin: 8px;
+    width: 150px;
+    height: 150px;
+    justify-content: space-around;
+    border: 3px solid  #914A8B;
+    
+    
+}
+
+.galeria {
+     display: flex;
+     width: 100%;
+     justify-content: space-around;
+     flex-wrap: wrap;
+     margin: auto;   
+}

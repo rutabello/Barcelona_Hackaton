@@ -1,5 +1,4 @@
 import React, { Component, Fragment } from 'react';
-import '../../src/components/SmallSquare.css';
 
 export default class SmallSquare extends React.Component {
 

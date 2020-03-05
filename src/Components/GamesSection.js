@@ -1,11 +1,12 @@
 import React from 'react'
 import './GamesSection.css'
 import NavbarSection from './NavbarSection'
+import Navbar from './Navbar/navbar';
 
 function GamesSection() {
     return (
         <div>
-            <NavbarSection />
+            <Navbar />
             <section id="games-section">
                 <div id="games-title">
                     <h3 id="inv-title">

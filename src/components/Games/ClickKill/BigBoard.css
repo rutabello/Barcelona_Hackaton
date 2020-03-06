@@ -1,0 +1,11 @@
+/*
+#Board{
+  cursor: url(./components/images/cursor.png)
+}
+*/
+
+.team-logo{
+  width:150px;
+  height: 150px;
+  background-color: red;
+}

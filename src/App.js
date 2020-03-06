@@ -8,7 +8,7 @@ import UserProfile from './components/UserProfile/userprofile'
 import DropdownCategories from './components/DropdownCategories/dropdown';
 import { Switch, Route, Link} from 'react-router-dom';
 import ButtonGames from './components/ButtonGames/buttonGames';
-import ClickKill from './components/Games/ClickKill/click'
+import ClickKill from './components/Games/ClickKill/BigBoard'
 
 const UserExample = {
   name :"Pepito ScrumMaster",

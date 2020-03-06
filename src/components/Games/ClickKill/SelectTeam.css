@@ -1,0 +1,8 @@
+.img-team {
+    display: inline-block;
+    text-align: center;
+}
+
+.img-container {
+    display: inline-flex;
+}

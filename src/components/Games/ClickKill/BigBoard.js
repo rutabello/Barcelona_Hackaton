@@ -8,7 +8,7 @@ export default class BigBoard extends React.Component {
     squareIndex: null,
     clickedIndex: false,
     counter: 0,
-    smallSquaresArray: ["", "", "", "", "", "", "", "", ""]
+    smallSquaresArray: ["", "", "", "", "", "", "", "", "", "", "", ""]
   }
   
   delay = 1000;

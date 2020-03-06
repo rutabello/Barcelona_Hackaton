@@ -12,15 +12,17 @@ function App() {
 
    
       return ( 
-          <div id="board">
+        <Fragment>
           <Navbar />
-          
-           <BigBoard />
+          <div id="board">
+
 
             <div className="App">
+            <BigBoard />
               <Footer />
             </div>
               </div>
+          </Fragment>
       )
     
 }

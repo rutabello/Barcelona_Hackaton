@@ -7,11 +7,14 @@ import ButtonUserLogged from './components/ButtonUserLogged/ButtonUserLogged'
 import UserProfile from './components/UserProfile/userprofile'
 import DropdownCategories from './components/DropdownCategories/dropdown'
 import GeoChallenge from './components/Games/GeoChallenge';
+import { Switch, Route, Link} from 'react-router-dom';
+import ButtonGames from './components/ButtonGames/buttonGames';
+import ClickKill from './components/Games/ClickKill/click'
 
 const UserExample = {
   name :"Pepito ScrumMaster",
   img: "https://avatars3.githubusercontent.com/u/59797566?s=460&v=4",
-  mail: "amamama@dkdkdkd.com",
+  username: "Pepito",
   age: '28',
   points: 20
 
@@ -21,23 +24,48 @@ const UserExample = {
 
 class App extends Component{
   state={
-    user:{}
+    user:{},
+    timesCliked: false,
+
   }
   simulateUserLogged =()=>{
     this.setState({
-      user:UserExample
+      user:UserExample,
+      timesCliked: true,
+
+    })
+  }
+  userOff =()=>{
+    this.setState({
+      user:{},
+      timesCliked: false,
+
     })
   }
   render(){
   return (
     <div className='App'>
-      
+
       <Navbar />
-      <ButtonUserLogged userHere={this.simulateUserLogged} />
-      <UserProfile userprof={this.state.user}/>
-      <DropdownCategories />
+      <div className="firstRow">
+        <DropdownCategories />
+        <UserProfile userprof={this.state.user}/>
+        <ButtonUserLogged userHere={this.simulateUserLogged} quitUser={this.userOff} />
+
+      </div>
+
+      <Switch>
+      <Route exact path ='/'>
+      <ButtonGames />
+      </Route>
+      <Route path='/cityplay'>
       <AppCapitals/>
       <GeoChallenge />
+      </Route>
+      <Route path='/tacleclick'>
+      <ClickKill />
+      </Route>
+      </Switch>
       <Footer />
 
 

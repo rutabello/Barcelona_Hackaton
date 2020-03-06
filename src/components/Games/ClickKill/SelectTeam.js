@@ -8,8 +8,8 @@ const SelectTeam = props => {
     console.log(props)
     return (
 
-        <div>
-            <h1>Haz un Clic al logo para vencer al adversario</h1>
+        <div id="TeamContainer">
+            <h1>Qual Equipo quieres eliminar?</h1>
           
             <div className="img-container">
                 {props.imageList.map((equipo)=>{                         

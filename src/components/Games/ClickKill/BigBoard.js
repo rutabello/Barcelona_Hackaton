@@ -136,7 +136,7 @@ export default class BigBoard extends React.Component {
           </BigContainer>
           <p>{this.state.counter}</p>
           <button onClick={this.onClickStart}>START</button>
-          <button onClick={this.restartCounter}>RESET THE RESULT</button>
+          <button onClick={this.restartCounter}>RESET GAME</button>
           </div>
         }
         </Fragment>

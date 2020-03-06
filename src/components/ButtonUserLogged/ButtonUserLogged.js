@@ -1,16 +1,19 @@
 import React from 'react';
 const ButtonUserLogged =(props)=>{
     return(
-        <div>
+        <div className="userButtons">
 
             <button
-            onClick={props.userHere}>
-                User Logged In
+            onClick={props.userHere}
+            className="buttonLog">
+
+                Log In
             </button>
 
             <button
-            onClick={props.quitUser}>
-                User Logged In
+            onClick={props.quitUser}
+            className="buttonLog">
+                Log Out
             </button>
 
 

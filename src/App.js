@@ -46,9 +46,13 @@ class App extends Component{
     <div className='App'>
 
       <Navbar />
-      <DropdownCategories />
-      <ButtonUserLogged userHere={this.simulateUserLogged} quitUser={this.userOff} />
-      <UserProfile userprof={this.state.user}/>
+      <div className="firstRow">
+        <DropdownCategories />
+        <UserProfile userprof={this.state.user}/>
+        <ButtonUserLogged userHere={this.simulateUserLogged} quitUser={this.userOff} />
+
+      </div>
+
       <Switch>
       <Route exact path ='/'>
       <ButtonGames />

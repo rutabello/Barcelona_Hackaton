@@ -14,23 +14,25 @@ function UserProfile(props) {
       <div>
       {props.userprof.name &&
         <div>
-        <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
+        <Button bsPrefix="buttonModal" onClick={handleShow}>
+          Mi Perfil
         </Button>
 
-        <Modal show={show} onHide={handleClose}>
+        <Modal show={show} onHide={handleClose} className="mt-5">
             <Modal.Header>
-              <Modal.Title>Modal heading</Modal.Title>
+              <Modal.Title className="titleProfile">Mi Perfil</Modal.Title>
             </Modal.Header>
             <Modal.Body>
-              <img className='avatar' src={props.userprof.img} />
-              <h3 className='textuser'>Name:{props.userprof.name}</h3>
-              <p className='textuser'>User Name:{props.userprof.username}</p>
-              <p className='textuser'>Score:{props.userprof.points}</p>
+              <div className="centerDiv">
+                <img className='avatar mt-3' src={props.userprof.img} />
+                <h3 className='textuser mt-3'>Nombre: {props.userprof.name}</h3>
+                <p className='textuser'>Nombre de Usuario: {props.userprof.username}</p>
+                <p className='textuser'>Puntuación: {props.userprof.points}</p>
+              </div>
 
             </Modal.Body>
             <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button className="buttonCloseModal" onClick={handleClose}>
               Cerrar
             </Button>
             </Modal.Footer>

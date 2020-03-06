@@ -1,4 +1,144 @@
-.margin{
-    height: 50vh;
-    color:red
+@font-face {
+    font-family: 'Khula', sans-serif;;
+    src: url("https://fonts.googleapis.com/css?family=Khula&display=swap");
+  }
+.container-game{
+    height: 95vh;
+    background: #112 url('./img/fondo_capitales.png')  no-repeat bottom ;
+    background-size:contain;   
 }
+.logo{
+    top: 59px;
+    left: 56px;
+    width: 400px;
+    height: 150px;
+    background: transparent url('img/logo-02.png') 0% 0% no-repeat padding-box;
+    background-size:contain;
+    opacity: 1;
+}
+.startGame-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+}
+.startGame-button{
+    width: 109px;
+    height: 109px;
+    background: transparent url('./img/Componente.svg') 0% 0% no-repeat padding-box;
+    background-size:contain;
+    border: none;
+    display: block;
+    margin:auto;
+    margin-top: 90%;
+}
+.playingGame{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.incorrecto{
+    color: #c53e3b;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.counterGame-button{
+
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    color: #c53e3b;
+    font-size: 5em;
+    font-weight: bold;
+
+    border:3px solid white; 
+    background-color: white;
+
+
+}
+.country{
+    top: 176px;
+    left: 32px;
+    width: 312px;
+    height: 40px;
+    background: #9AC1D9 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+
+}
+.score{
+    padding: 15px;
+    height: 90px;
+    background: #9AC1D9 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+    opacity: 1;
+    font-weight: bold;
+    font-size: 2.5em;
+    color:white
+}
+.flex-butons-capitals{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.choose-capital{
+    top: 232px;
+left: 32px;
+width: 152px;
+height: 56px;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 0px #00000029;
+border-radius: 5px;
+opacity: 1;
+}
+
+.gameover{
+    font-size: 3em;
+    font-weight: bold;
+    color:white
+}
+.play-again{
+    top: 319px;
+    left: 132px;
+    color: #c53e3b;
+    font-weight: bold;
+    font-size: 2em;
+    width: 300px;
+    height: 100px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 0px #00000029;
+    border-radius: 5px;
+    opacity: 1;
+}
+.back-menu{
+    top: 426px;
+    left: 150px;
+    width: 126px;
+    height: 29px;
+    text-align: center;
+    background-color: #c53e3b;
+    color: #FFFFFF;
+    border:#c53e3b ;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    opacity: 1;
+}
+.shered-link{
+    width: 250px;
+    display: flex;
+    justify-content: space-around;
+}
+@media (max-width: 700px) {
+    .startGame-button{
+        margin-top: 55%;
+        margin-bottom: 45%;
+    }
+    .flex-butons-capitals{
+        grid-template-columns: auto auto;
+    }
+    
+  }

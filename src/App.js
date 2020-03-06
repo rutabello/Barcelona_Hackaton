@@ -1,12 +1,33 @@
+<<<<<<< HEAD
 import React, { Fragment } from 'react';
+=======
+import React, {Component} from 'react';
+>>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 import './App.css';
 import Navbar from './components/Navbar/navbar';
 import Footer from './components/Footer/Footer';
 import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
+<<<<<<< HEAD
 import DropdownCategories from './components/DropdownCategories/dropdown';
 import SmallSquare from './components/SmallSquare';
+=======
+import ButtonUserLogged from './components/ButtonUserLogged/ButtonUserLogged'
+import UserProfile from './components/UserProfile/userprofile'
+import DropdownCategories from './components/DropdownCategories/dropdown'
+import GeoChallenge from './components/Games/GeoChallenge';
+import { Switch, Route, Link} from 'react-router-dom';
+import ButtonGames from './components/ButtonGames/buttonGames';
+import ClickKill from './components/Games/ClickKill/click'
+>>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 
+const UserExample = {
+  name :"Pepito ScrumMaster",
+  img: "https://avatars3.githubusercontent.com/u/59797566?s=460&v=4",
+  username: "Pepito",
+  age: '28',
+  points: 20
 
+<<<<<<< HEAD
 
 export default class BigBoard extends React.Component {
   state = {
@@ -17,6 +38,57 @@ export default class BigBoard extends React.Component {
   }
   
   delay = 1000;
+=======
+
+
+};
+
+class App extends Component{
+  state={
+    user:{},
+    timesCliked: false,
+
+  }
+  simulateUserLogged =()=>{
+    this.setState({
+      user:UserExample,
+      timesCliked: true,
+
+    })
+  }
+  userOff =()=>{
+    this.setState({
+      user:{},
+      timesCliked: false,
+
+    })
+  }
+  render(){
+  return (
+    <div className='App'>
+
+      <Navbar />
+      <div className="firstRow">
+        <DropdownCategories />
+        <UserProfile userprof={this.state.user}/>
+        <ButtonUserLogged userHere={this.simulateUserLogged} quitUser={this.userOff} />
+
+      </div>
+
+      <Switch>
+      <Route exact path ='/'>
+      <ButtonGames />
+      </Route>
+      <Route path='/cityplay'>
+      <AppCapitals/>
+      <GeoChallenge />
+      </Route>
+      <Route path='/tacleclick'>
+      <ClickKill />
+      </Route>
+      </Switch>
+      <Footer />
+>>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 
   chooseSmallSquare = () => {
     let randomIndex = Math.floor(Math.random() * this.state.smallSquaresArray.length);
@@ -25,6 +97,7 @@ export default class BigBoard extends React.Component {
     })
   }
 
+<<<<<<< HEAD
   onEndTimer = () => {
     if(this.state.clickedIndex === true){
       this.setState({
@@ -95,3 +168,11 @@ export default class BigBoard extends React.Component {
 
 
 //export default App;
+=======
+
+    </div>
+  );
+}
+}
+export default App;
+>>>>>>> 664045d422373d4791591cf4a32855e9293f19c3

@@ -142,3 +142,7 @@ opacity: 1;
     }
     
   }
+  .back-menu a {
+      color: white;
+      text-decoration: none;
+  }

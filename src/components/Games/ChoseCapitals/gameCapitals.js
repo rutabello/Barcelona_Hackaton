@@ -2,7 +2,8 @@ import React, { Component, Fragment } from 'react';
 import media1 from './img/social media-01.png'
 import media2 from './img/social media-02.png'
 import media3 from './img/social media-03.png'
-import './chose.css'
+import './chose.css';
+import {Link} from 'react-router-dom'
 //to put in a random order the array
 const Shuffle=(a)=>{
     var j, x, i;
@@ -114,7 +115,7 @@ render(){
         <div className='logo'>
             <button className='startGame-button' onClick={this.getCountry}></button>
             
-            <button onClick={this.props.back} className='back-menu'>Exit Game</button></div>
+            <button className='back-menu'><Link to="/">Exit Game</Link></button></div>
     
     </div> }
 
@@ -129,7 +130,7 @@ render(){
             return <button className='choose-capital' onClick={this.chooseCapital} key={index} id={capital}>{capital}</button>
         })}</div>
         <div className='score'>SCORE: {this.state.points}</div>
-        <button onClick={this.props.back} className='back-menu'>X</button>
+        <button className='back-menu'><Link to="/">X</Link></button>
     </div>}
 
     {/*GAMEOVER PART */}
@@ -142,7 +143,7 @@ render(){
             <img src={media3} alt=''></img>
         </div>
         <button className='play-again' onClick={this.tryAgain}>Play Again</button>
-        <button onClick={this.props.back} className='back-menu'>Exit Game</button>
+        <button  className='back-menu'><Link to="/">Exit Game</Link></button>
         {/*MOSTRAR EL COMPONENT DE PUNTOS GANADOS */}
     </div>}
     </div>

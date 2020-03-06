@@ -4,6 +4,8 @@ import Carousel from 'react-bootstrap/Carousel';
 import '../ButtonGames/buttonGames.css';
 import CardDeck from 'react-bootstrap/CardDeck';
 import Card from 'react-bootstrap/Card';
+import cityban from '../imgmainPage/city@2x.png';
+import tackle from '../imgmainPage/tackle@2x.png'
 
 
 // const ButtonGames =(props)=>{
@@ -27,12 +29,10 @@ const ButtonGames = (props)=>{
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+      src={cityban}
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>CITY PLAY</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum inst.</p>
       <button className='myButton'>
         <Link to='cityplay' className='jugartext'> Jugar
         </Link></button>
@@ -41,30 +41,28 @@ const ButtonGames = (props)=>{
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsUqRYnCvLDweQUDT96a2AkKgTccxvS12zPLupryRPMhiZ1S1N"
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>Geo Challange</h3>
+      <p>Cuánto sabes de banderas!</p>
       <button className='myButton'>
-        <Link to='tacleclick' className='jugartext'> Jugar
+        <Link to='geochallange' className='jugartext'> Jugar
         </Link></button>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+      src={tackle}
       alt="Third slide"
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       <button className='myButton'>
-        <Link to='' className='jugartext'> Jugar
+        <Link to='tacleclick' className='jugartext'> Jugar
         </Link></button>
     </Carousel.Caption>
   </Carousel.Item>
@@ -73,13 +71,12 @@ const ButtonGames = (props)=>{
 <Fragment>
 <CardDeck className='cardcarousel'>
   <Card>
-    <Card.Img variant="top" src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+    <Card.Img variant="top" src={cityban}
 />
     <Card.Body> 
       <Card.Title>City Play</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
+      Descubre las capitales del mundo!
       </Card.Text>
       <button className='myButton'>
         <Link to='cityplay' className='jugartext'> Jugar
@@ -87,30 +84,28 @@ const ButtonGames = (props)=>{
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+    <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTsUqRYnCvLDweQUDT96a2AkKgTccxvS12zPLupryRPMhiZ1S1N"
  />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Geo Challange</Card.Title>
       <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.
+      Cuánto sabes de banderas!
       </Card.Text>
       <button className='myButton'>
-        <Link to='cityplay' className='jugartext'> Jugar
+        <Link to='geochallange' className='jugartext'> Jugar
         </Link></button>
     </Card.Body>
   </Card>
   <Card>
-    <Card.Img variant="top" src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+    <Card.Img variant="top" src={tackle}
  />
     <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Tacle Click</Card.Title>
       <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content.
+      Tacle tacle click
       </Card.Text>
       <button className='myButton'>
-        <Link to='' className='jugartext'> Jugar
+        <Link to='tacleclick' className='jugartext'> Jugar
         </Link></button>
     </Card.Body>
   </Card>
@@ -120,44 +115,44 @@ const ButtonGames = (props)=>{
 <Fragment>
 <CardDeck>
   <Card>
-    <Card.Img variant="top" src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
+    <Card.Img variant="top" src="https://eurocold.co.uk/wp-content/uploads/2015/08/dark-blue-box.png"
 />
     <Card.Body>
-      <Card.Title>City Play</Card.Title>
-      <Card.Text>
-        This is a wider card with supporting text below as a natural lead-in to
-        additional content. This content is a little bit longer.
-      </Card.Text>
-      <button className='myButton'>
-        <Link to='' className='jugartext'> Jugar
-        </Link></button>
-    </Card.Body>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
- />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
-      <Card.Text>
-        This card has supporting text below as a natural lead-in to additional
-        content.
-      </Card.Text>
-      <button className='myButton'>
-        <Link to='' className='jugartext'> Jugar
-        </Link></button>
-    </Card.Body>
-  </Card>
-  <Card>
-    <Card.Img variant="top" src="https://compass-ssl.xbox.com/assets/7a/0f/7a0fb21a-df9e-490a-894e-3d44a87d59fd.jpg?n=Fortnite_gallery-0_1350x759_01.jpg"
- />
-    <Card.Body>
-      <Card.Title>Card title</Card.Title>
+      <Card.Title>Juego</Card.Title>
       <Card.Text>
         This is a wider card with supporting text below as a natural lead-in to
         additional content.
       </Card.Text>
       <button className='myButton'>
-        <Link to='' className='jugartext'> Jugar
+        <Link to='/' className='jugartext'> Jugar
+        </Link></button>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="https://eurocold.co.uk/wp-content/uploads/2015/08/dark-blue-box.png"
+ />
+    <Card.Body>
+      <Card.Title>Juego</Card.Title>
+      <Card.Text>
+        This card has supporting text below as a natural lead-in to additional
+        content.
+      </Card.Text>
+      <button className='myButton'>
+        <Link to='/' className='jugartext'> Jugar
+        </Link></button>
+    </Card.Body>
+  </Card>
+  <Card>
+    <Card.Img variant="top" src="https://eurocold.co.uk/wp-content/uploads/2015/08/dark-blue-box.png"
+ />
+    <Card.Body>
+      <Card.Title>Juego</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in to
+        additional content.
+      </Card.Text>
+      <button className='myButton'>
+        <Link to='/' className='jugartext'> Jugar
         </Link></button>
     </Card.Body>
   </Card>

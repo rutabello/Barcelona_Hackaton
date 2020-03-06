@@ -5,7 +5,8 @@ import Footer from './components/Footer/Footer'
 import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
 import ButtonUserLogged from './components/ButtonUserLogged/ButtonUserLogged'
 import UserProfile from './components/UserProfile/userprofile'
-import DropdownCategories from './components/DropdownCategories/dropdown';
+import DropdownCategories from './components/DropdownCategories/dropdown'
+import GeoChallenge from './components/Games/GeoChallenge';
 import { Switch, Route, Link} from 'react-router-dom';
 import ButtonGames from './components/ButtonGames/buttonGames';
 import ClickKill from './components/Games/ClickKill/click'
@@ -24,36 +25,45 @@ const UserExample = {
 class App extends Component{
   state={
     user:{},
-    
+    timesCliked: false,
+
   }
   simulateUserLogged =()=>{
     this.setState({
-      user:UserExample
+      user:UserExample,
+      timesCliked: true,
 
     })
   }
   userOff =()=>{
     this.setState({
-      user:{}
+      user:{},
+      timesCliked: false,
+
     })
   }
   render(){
   return (
     <div className='App'>
-    
+
       <Navbar />
-      <DropdownCategories />
-      <ButtonUserLogged userHere={this.simulateUserLogged} />
-      <UserProfile userprof={this.state.user}/>
+      <div className="firstRow">
+        <DropdownCategories />
+        <UserProfile userprof={this.state.user}/>
+        <ButtonUserLogged userHere={this.simulateUserLogged} quitUser={this.userOff} />
+
+      </div>
+
       <Switch>
       <Route exact path ='/'>
       <ButtonGames />
       </Route>
       <Route path='/cityplay'>
-      <AppCapitals/> 
+      <AppCapitals/>
+      <GeoChallenge />
       </Route>
       <Route path='/tacleclick'>
-      <ClickKill /> 
+      <ClickKill />
       </Route>
       </Switch>
       <Footer />

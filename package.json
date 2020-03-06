@@ -8,10 +8,16 @@
     "@testing-library/user-event": "^7.2.1",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "country-data": "0.0.31",
+    "leaflet": "^1.6.0",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
+<<<<<<< HEAD
+    "react-leaflet": "^2.6.1",
+=======
     "react-router-dom": "^5.1.2",
+>>>>>>> bad268e292f7a7c540d5f6b649489fe4d7b2a99d
     "react-scripts": "3.4.0"
   },
   "scripts": {

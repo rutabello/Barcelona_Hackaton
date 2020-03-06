@@ -28,6 +28,14 @@
   color: #61dafb;
 }
 
+.firstRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #254159;
+  height: 40px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

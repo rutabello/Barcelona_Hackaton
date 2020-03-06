@@ -1,8 +1,53 @@
+#team-container {
+    top: 0px;
+    left: 0px;
+    width: 375px;
+    height: 667px;
+    background: #043A40 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#team-title {
+    top: 52px;
+    left: 34px;
+    width: 308px;
+    height: 98px;
+    background: transparent url('./images/tacle_onclick-04.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+#team-subtitle {
+    top: 181px;
+    left: 49px;
+    width: 280px;
+    height: 20px;
+    text-align: left;
+    font: Regular 20px/24px Segoe UI;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    text-shadow: 1px 1px 0px #00000029;
+    opacity: 1;
+}
+
 .img-team {
     display: inline-block;
     text-align: center;
 }
 
 .img-container {
-    display: inline-flex;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: 20%;
+        grid-template-areas: 
+          "a a a a b"
+          "a a a a b"
+          "c c c c d";
+        align-items: start;
+        
+ }
+
+.img-team img {
+    width: 40px;
+    height: 40px;
 }

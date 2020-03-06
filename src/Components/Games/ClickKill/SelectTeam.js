@@ -6,8 +6,9 @@ const SelectTeam = props => {
     console.log(props)
     return (
 
-        <div>
-            <h1>Elige team pa matarlo</h1>
+        <div id="team-container">
+            <div id="team-title"></div>
+            <h3 id="team-subtitle">Selecciona un equipo a destruir</h3>
             <div className="img-container">
                 {props.imageList.map((equipo)=>{                         
                     return (

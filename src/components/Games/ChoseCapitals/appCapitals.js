@@ -1,6 +1,6 @@
 import React, { Component, Fragment} from 'react';
 import GameCapitals from './gameCapitals'
-import './chose.css'
+
 import axios from 'axios';
 
 const Shuffle=(a)=>{
@@ -29,14 +29,17 @@ class AppCapitals extends Component {
          })
 
   }
-  
+  back=()=>{
+    //function to click the buttons to go tu menu or the starting game page
+    window.location.reload()
+  }
 
 
 
   render(){
   return (
  
-      <GameCapitals className='margin' countries={this.state.data}/>
+      <GameCapitals  countries={this.state.data} back={this.back}/>
 
   );
 }}

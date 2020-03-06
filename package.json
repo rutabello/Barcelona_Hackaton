@@ -13,11 +13,11 @@
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-dom": "^16.13.0",
-<<<<<<< HEAD
+
     "react-leaflet": "^2.6.1",
-=======
+
     "react-router-dom": "^5.1.2",
->>>>>>> bad268e292f7a7c540d5f6b649489fe4d7b2a99d
+
     "react-scripts": "3.4.0"
   },
   "scripts": {

@@ -38,7 +38,6 @@
 
 .img-container {
     display: grid;
-<<<<<<< HEAD
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
     grid-auto-rows: 20%;
@@ -49,26 +48,12 @@
       "b b b"
       "c c c"
       "d d d";
-=======
-    grid-template-columns: repeat(5, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: 20%;
-    grid-template-areas: 
-      "a a a a b"
-      "a a a a b"
-      "c c c c d";
->>>>>>> e007cb2c5cdf3633948e9467297cfd907e929d22
     align-items: start;
         
  }
 
 .img-team img {
-<<<<<<< HEAD
-    width: 40px;
-    height: 40px;
-}
-=======
+
     width: 73px;
     height: 86px;
 }
->>>>>>> e007cb2c5cdf3633948e9467297cfd907e929d22

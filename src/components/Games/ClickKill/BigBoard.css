@@ -17,9 +17,9 @@
 
 .pantalla{
   height: 95vh;
-}
   display: inline-block;
   text-align: center;
+  cursor: url(../ClickKill/images/hit.png);
 }
 
 #Image {

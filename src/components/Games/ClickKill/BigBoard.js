@@ -128,18 +128,6 @@ export default class BigBoard extends React.Component {
           {this.state.teamChosen == false 
           ? <SelectTeam printName={this.printName} imageList={this.state.imageList}/>
           : <div>
-<<<<<<< HEAD
-          <BigContainer>
-          { 
-            this.state.smallSquaresArray.map((x, index) => 
-            //turns show to true if index of the smallsquare == the squareIndex rendered by the chooseSmallSquare function
-                <SmallSquare top={x.top} left={x.left} logo={this.state.logoSelected} show={index === this.state.squareIndex} itemClicked={this.itemClicked}/>
-            )}
-          </BigContainer>
-          <p>{this.state.counter}</p>
-          <button onClick={this.onClickStart}>START</button>
-          <button onClick={this.restartCounter}>RESET THE RESUL</button>
-=======
                 <BigContainer id="squarecontainer">
                   { 
                     this.state.smallSquaresArray.map((x, index) => 
@@ -150,7 +138,6 @@ export default class BigBoard extends React.Component {
                 <p>{this.state.counter}</p>
                 <button onClick={this.onClickStart}>START</button>
                 <button onClick={this.restartCounter}>RESET THE RESULT</button>
->>>>>>> e007cb2c5cdf3633948e9467297cfd907e929d22
           </div>
         }
         </div>

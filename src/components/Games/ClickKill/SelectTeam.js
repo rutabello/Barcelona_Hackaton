@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./SelectTeam.css";
-import styled, {css} from 'styled-components';
 
 
 

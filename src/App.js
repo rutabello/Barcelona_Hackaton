@@ -16,9 +16,6 @@ const UserExample = {
   username: "Pepito",
   age: '28',
   points: 20
-
-
-
 };
 
 class App extends Component{

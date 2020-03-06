@@ -155,19 +155,19 @@ class GeoChallenge extends Component {
     const bounds = Leaflet.latLngBounds(this.state.bounds);
 
     return (
-      <div>
-        <button><Link >Exit Game</Link></button>
-        <p>Correct answers: {this.state.correctAnswers} out of {this.state.totalAnswers}</p>
+      <div className="mapContent">
+        <button className="exitButton"><Link to="/">&lt;&lt; Exit Game</Link></button>
         {
           this.state.options.length > 0
             ? (
-              <div>
+              <div className="flagDisplay">
                 <p>Guess this flag:</p>
                 <span className="flag">{this.state.options[0].emoji}</span>
               </div>
             )
             : null
         }
+        <p className="counterText">Correct answers: {this.state.correctAnswers} out of {this.state.totalAnswers}</p>
         <div className="leaflet-container">
           <LeafletMap
           bounds={bounds}

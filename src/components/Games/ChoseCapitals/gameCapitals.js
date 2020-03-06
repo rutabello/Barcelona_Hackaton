@@ -3,6 +3,7 @@ import media1 from './img/social media-01.png'
 import media2 from './img/social media-02.png'
 import media3 from './img/social media-03.png'
 import './chose.css'
+
 //to put in a random order the array
 const Shuffle=(a)=>{
     var j, x, i;

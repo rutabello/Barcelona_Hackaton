@@ -3,6 +3,7 @@ import countriesDB from 'country-data'; // This library is cool but doesn't have
 import coordinates from './coordinates'; // array of coordintaes by country
 import { Map as LeafletMap, TileLayer, Marker, Popup } from 'react-leaflet';
 import './geoChallenge.css'
+import {Link} from 'react-router-dom';
 const Leaflet = window.L;
 
 
@@ -155,6 +156,7 @@ class GeoChallenge extends Component {
 
     return (
       <div>
+        <button><Link >Exit Game</Link></button>
         <p>Correct answers: {this.state.correctAnswers} out of {this.state.totalAnswers}</p>
         {
           this.state.options.length > 0

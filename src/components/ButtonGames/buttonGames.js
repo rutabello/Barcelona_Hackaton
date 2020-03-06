@@ -3,7 +3,8 @@ import {Link} from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import '../ButtonGames/buttonGames.css';
 import CardDeck from 'react-bootstrap/CardDeck';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+
 
 // const ButtonGames =(props)=>{
 //     return (

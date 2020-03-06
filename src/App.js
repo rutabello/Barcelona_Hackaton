@@ -13,7 +13,7 @@ import ClickKill from './components/Games/ClickKill/click'
 const UserExample = {
   name :"Pepito ScrumMaster",
   img: "https://avatars3.githubusercontent.com/u/59797566?s=460&v=4",
-  mail: "amamama@hola.com",
+  username: "Pepito",
   age: '28',
   points: 20
 
@@ -23,11 +23,18 @@ const UserExample = {
 
 class App extends Component{
   state={
-    user:{}
+    user:{},
+    
   }
   simulateUserLogged =()=>{
     this.setState({
       user:UserExample
+
+    })
+  }
+  userOff =()=>{
+    this.setState({
+      user:{}
     })
   }
   render(){
@@ -35,9 +42,9 @@ class App extends Component{
     <div className='App'>
     
       <Navbar />
+      <DropdownCategories />
       <ButtonUserLogged userHere={this.simulateUserLogged} />
       <UserProfile userprof={this.state.user}/>
-      <DropdownCategories />
       <Switch>
       <Route exact path ='/'>
       <ButtonGames />

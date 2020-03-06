@@ -124,6 +124,7 @@ export default class BigBoard extends React.Component {
     render() {
       return ( 
         <Fragment>
+        <div className='pantalla'>
           {this.state.teamChosen == false 
           ? <SelectTeam printName={this.printName} imageList={this.state.imageList}/>
           : <div>
@@ -136,9 +137,10 @@ export default class BigBoard extends React.Component {
           </BigContainer>
           <p>{this.state.counter}</p>
           <button onClick={this.onClickStart}>START</button>
-          <button onClick={this.restartCounter}>RESET GAME</button>
+          <button onClick={this.restartCounter}>RESET THE RESUL</button>
           </div>
         }
+        </div>
         </Fragment>
       )
     }

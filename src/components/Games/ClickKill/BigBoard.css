@@ -9,3 +9,12 @@
   height: 150px;
   background-color: red;
 }
+
+.globalContainer {
+  background: #043A40 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.pantalla{
+  height: 95vh;
+}

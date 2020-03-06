@@ -4,7 +4,7 @@
   }
 .container-game{
     height: 95vh;
-    background: #112 url('./img/fondo_capitales.png')  no-repeat bottom ;
+    background: #254159 url('./img/fondo_capitales.png')  no-repeat bottom ;
     background-size:contain;   
 }
 .logo{

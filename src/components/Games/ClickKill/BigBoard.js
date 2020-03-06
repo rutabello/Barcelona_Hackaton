@@ -22,15 +22,22 @@ import Valencia from './images/Valencia.png';
 import Valladolid from './images/Valladolid.png';
 import Villareal from './images/Villareal.png';
 import Leganes from './images/Leganes.png';
+import styled, {css} from 'styled-components';
 
-
+const BigContainer = styled.div`
+    position: relative;
+   
+`;
 
 export default class BigBoard extends React.Component {
   state = {
     squareIndex: null,
     clickedIndex: false,
+    teamChosen: false,
     counter: 0,
-    smallSquaresArray: [{top: 0, left: 0}, {top: 0, left: 200}, {top: 0, left: 400}, {top: 200, left: 0}, {top: 200, left: 200}, {top: 200, left: 400}, {top: 400, left: 0}, {top: 400, left: 200}, {top: 400, left: 400}],
+    smallSquaresArray: [{top: 0, left: 0}, {top: 0, left: 200}, {top: 0, left: 400},
+       {top: 200, left: 0}, {top: 200, left: 200}, {top: 200, left: 400}, {top: 400, left: 0},
+        {top: 400, left: 200}, {top: 400, left: 400}, {top: 100, left:500}],
     logoSelected: '',
     imageList: [
       Alaves,
@@ -56,7 +63,7 @@ export default class BigBoard extends React.Component {
     ]
   }
   
-  delay = 3000;
+  delay = 2000;
 
   chooseSmallSquare = () => {
     let randomIndex = Math.floor(Math.random() * this.state.smallSquaresArray.length);
@@ -71,7 +78,7 @@ export default class BigBoard extends React.Component {
         clickedIndex: false, 
         counter: this.state.counter + 1
       })
-      this.delay = this.delay - 50;
+      this.delay = this.delay - 100;
       console.log("success")
       this.onClickStart()
     } else {
@@ -101,27 +108,37 @@ export default class BigBoard extends React.Component {
     this.setState ({
       counter: 0
     })
-    this.delay = 1000
+    this.delay = 2000
   }
 
   printName = (e) => {
       this.setState({
-          logoSelected: e.target.id
+          logoSelected: e.target.id,
+          teamChosen: true
       })
   }
+
+
+
 
     render() {
       return ( 
         <Fragment>
-            { 
-              this.state.smallSquaresArray.map((x, index) => 
-              //turns show to true if index of the smallsquare == the squareIndex rendered by the chooseSmallSquare function
-                  <SmallSquare top={x.top} left={x.left} logo={this.state.logoSelected} show={index === this.state.squareIndex} itemClicked={this.itemClicked}/>
-              )}
-              <p>{this.state.counter}</p>
-              <button onClick={this.onClickStart}>START</button>
-              <button onClick={this.restartCounter}>RESET THE RESULT</button>
-              <SelectTeam printName={this.printName} imageList={this.state.imageList}/>
+          {this.state.teamChosen == false 
+          ? <SelectTeam printName={this.printName} imageList={this.state.imageList}/>
+          : <div>
+          <BigContainer>
+          { 
+            this.state.smallSquaresArray.map((x, index) => 
+            //turns show to true if index of the smallsquare == the squareIndex rendered by the chooseSmallSquare function
+                <SmallSquare top={x.top} left={x.left} logo={this.state.logoSelected} show={index === this.state.squareIndex} itemClicked={this.itemClicked}/>
+            )}
+          </BigContainer>
+          <p>{this.state.counter}</p>
+          <button onClick={this.onClickStart}>START</button>
+          <button onClick={this.restartCounter}>RESET THE RESULT</button>
+          </div>
+        }
         </Fragment>
       )
     }

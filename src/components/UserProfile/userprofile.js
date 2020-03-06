@@ -9,8 +9,8 @@ function UserProfile(props) {
       <div className="userprofile">
         <img className='avatar' src={props.userprof.img} />
         <h3 className='textuser'>Name:{props.userprof.name}</h3>
-        <p className='textuser'>E-mail:{props.userprof.mail}</p>
-        <p className='textuser'>Points:{props.userprof.points}</p>
+        <p className='textuser'>User Name:{props.userprof.username}</p>
+        <p className='textuser'>Score:{props.userprof.points}</p>
         </div>
         }
     </div>

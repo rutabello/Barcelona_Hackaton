@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 import "./SelectTeam.css";
+import styled, {css} from 'styled-components';
+
+
 
 
 const SelectTeam = props => {
@@ -7,7 +10,8 @@ const SelectTeam = props => {
     return (
 
         <div>
-            <h1>Elige team pa matarlo</h1>
+            <h1>Haz un Clic al logo para vencer al adversario</h1>
+          
             <div className="img-container">
                 {props.imageList.map((equipo)=>{                         
                     return (
@@ -16,7 +20,9 @@ const SelectTeam = props => {
                         </div>
                     )
                     })}
+                    
             </div>
+           
     </div>
 )
 }

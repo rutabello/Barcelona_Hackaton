@@ -9,6 +9,8 @@ const SquareContainer = styled.div`
     left: ${props => props.left}px;
 `;
 
+
+
 const SmallSquare = props =>(
     // SmallSquare.state.display = false ? return counter : return counter + 1 and it changes back to false
     props.show

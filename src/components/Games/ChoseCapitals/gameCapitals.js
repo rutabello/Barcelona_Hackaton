@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import Games from './gameCapitals.css';
 
 //to put in a random order the array
 const Shuffle=(a)=>{

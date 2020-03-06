@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import styled, {css} from 'styled-components';
-
 import './BigBoard.css'
 
 const SquareContainer = styled.div`

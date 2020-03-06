@@ -19,12 +19,10 @@ class DropdownCategories extends Component {
                </Dropdown.Toggle>
 
                <Dropdown.Menu className="dropdownContent">
-                 <Dropdown.Item eventKey="1">Red</Dropdown.Item>
-                 <Dropdown.Item eventKey="2">Blue</Dropdown.Item>
-                 <Dropdown.Item eventKey="3" active>
-                   Orange
-                 </Dropdown.Item>
-                 <Dropdown.Item eventKey="1">Red-Orange</Dropdown.Item>
+                 <Dropdown.Item eventKey="1">Cultura</Dropdown.Item>
+                 <Dropdown.Item eventKey="2">Deportes</Dropdown.Item>
+                 <Dropdown.Item eventKey="3">Sociedad</Dropdown.Item>
+                 <Dropdown.Item eventKey="1">Historia</Dropdown.Item>
                </Dropdown.Menu>
              </Dropdown>,
           </div>

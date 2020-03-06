@@ -2,7 +2,7 @@
     width: 200px;
     height: 200px;
     border: 2px solid black;
-   
+
 }
 .avatar {
     width: 50px;
@@ -17,3 +17,20 @@
     text-align: left;
     font-size: 13px;
 }
+
+
+.buttonUserLogged {
+
+	background-color:#000b4c;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+    text-shadow:0px -1px 0px #5b6178;
+  color: white;
+
+  }

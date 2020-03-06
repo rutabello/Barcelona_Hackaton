@@ -1,12 +1,23 @@
 .toggle {
-  background-color: grey !important;
+  background-color: #b7c1d4 !important;
   border: none !important;
   text-align: left !important;
   border-radius: 0 !important;
   display: inline-block;
   float: left;
+  color: #000 !important;
 }
 
 .no-pad {
   padding: 0px !important;
 }
+
+
+.dropdownContent {
+  text-decoration: none !important;
+}
+
+/* .dropdownContent:focus {
+  color: white !important;
+
+} */

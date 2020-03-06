@@ -24,36 +24,40 @@ const UserExample = {
 class App extends Component{
   state={
     user:{},
-    
+    timesCliked: false,
+
   }
   simulateUserLogged =()=>{
     this.setState({
-      user:UserExample
+      user:UserExample,
+      timesCliked: true,
 
     })
   }
   userOff =()=>{
     this.setState({
-      user:{}
+      user:{},
+      timesCliked: false,
+
     })
   }
   render(){
   return (
     <div className='App'>
-    
+
       <Navbar />
       <DropdownCategories />
-      <ButtonUserLogged userHere={this.simulateUserLogged} />
+      <ButtonUserLogged userHere={this.simulateUserLogged} quitUser={this.userOff} />
       <UserProfile userprof={this.state.user}/>
       <Switch>
       <Route exact path ='/'>
       <ButtonGames />
       </Route>
       <Route path='/cityplay'>
-      <AppCapitals/> 
+      <AppCapitals/>
       </Route>
       <Route path='/tacleclick'>
-      <ClickKill /> 
+      <ClickKill />
       </Route>
       </Switch>
       <Footer />

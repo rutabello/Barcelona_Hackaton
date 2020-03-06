@@ -112,10 +112,9 @@ render(){
     <div className='container-game'>
         {this.state.gameStatus==='startGame'&& <div className='startGame-page'>
         <div className='logo'>
+            <p className='instrucciones'>Instrucciones: Seleciona la capital correcta! Si aciertas ganas 10 puntos y 4 segundos y si fallas te resta 3s</p>
             <button className='startGame-button' onClick={this.getCountry}></button>
-            
             <button onClick={this.props.back} className='back-menu'>Exit Game</button></div>
-    
     </div> }
 
     {/*GAMING PART */}

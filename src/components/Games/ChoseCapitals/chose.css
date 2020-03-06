@@ -1,17 +1,15 @@
-@font-face {
-    font-family: 'Khula', sans-serif;;
-    src: url("https://fonts.googleapis.com/css?family=Khula&display=swap");
-  }
+
 .container-game{
     height: 95vh;
     background: #254159 url('./img/fondo_capitales.png')  no-repeat bottom ;
     background-size:contain;   
+    font-family: 'Neuton', serif;
 }
 .logo{
     top: 59px;
     left: 56px;
-    width: 400px;
-    height: 150px;
+    width: 450px;
+    height: 200px;
     background: transparent url('img/logo-02.png') 0% 0% no-repeat padding-box;
     background-size:contain;
     opacity: 1;
@@ -23,6 +21,14 @@
     justify-content: space-around;
     height: 50%;
 }
+.instrucciones{
+    color:white;
+    background-color: #c53e3b;
+    border-radius: 15%;
+    opacity: 0.8;
+    margin-top: 60%;
+
+}
 .startGame-button{
     width: 109px;
     height: 109px;
@@ -31,7 +37,7 @@
     border: none;
     display: block;
     margin:auto;
-    margin-top: 90%;
+    margin-top: 20%;
 }
 .playingGame{
     height: 100%;
@@ -132,13 +138,25 @@ opacity: 1;
     display: flex;
     justify-content: space-around;
 }
+
 @media (max-width: 700px) {
     .startGame-button{
         margin-top: 55%;
         margin-bottom: 45%;
+        margin-left: 30%;
     }
     .flex-butons-capitals{
         grid-template-columns: auto auto;
+    }
+    .logo{
+        margin-left: 12%;
+        width: 400px;
+        height: 150px;
+    }
+    .instrucciones{
+        width:300px;
+        margin-left: 5%;
+        margin-top: 50%;
     }
     
   }

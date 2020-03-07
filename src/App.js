@@ -1,16 +1,14 @@
 <<<<<<< HEAD
 import React, { Fragment } from 'react';
 =======
-import React, {Component} from 'react';
+import React, {Component} { Fragment }  from 'react';
 >>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 import './App.css';
 import Navbar from './components/Navbar/navbar';
 import Footer from './components/Footer/Footer';
 import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
-<<<<<<< HEAD
 import DropdownCategories from './components/DropdownCategories/dropdown';
 import SmallSquare from './components/SmallSquare';
-=======
 import ButtonUserLogged from './components/ButtonUserLogged/ButtonUserLogged'
 import UserProfile from './components/UserProfile/userprofile'
 import DropdownCategories from './components/DropdownCategories/dropdown'
@@ -18,7 +16,6 @@ import GeoChallenge from './components/Games/GeoChallenge';
 import { Switch, Route, Link} from 'react-router-dom';
 import ButtonGames from './components/ButtonGames/buttonGames';
 import ClickKill from './components/Games/ClickKill/click'
->>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 
 const UserExample = {
   name :"Pepito ScrumMaster",
@@ -27,18 +24,6 @@ const UserExample = {
   age: '28',
   points: 20
 
-<<<<<<< HEAD
-
-export default class BigBoard extends React.Component {
-  state = {
-    squareIndex: null,
-    clickedIndex: false,
-    counter: 0,
-    smallSquaresArray: ["", "", "", "", "", "", "", "", ""]
-  }
-  
-  delay = 1000;
-=======
 
 
 };
@@ -88,7 +73,6 @@ class App extends Component{
       </Route>
       </Switch>
       <Footer />
->>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 
   chooseSmallSquare = () => {
     let randomIndex = Math.floor(Math.random() * this.state.smallSquaresArray.length);

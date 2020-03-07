@@ -1,5 +1,5 @@
-.App {
-  text-align: center;
+#Board{
+  cursor: url(./components/images/cursor.png)
 }
 
 .App-logo {

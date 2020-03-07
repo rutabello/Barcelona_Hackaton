@@ -1,4 +1,6 @@
 import React, { Component, Fragment } from 'react';
+import Games from './gameCapitals.css';
+
 import media1 from './img/social media-01.png'
 import media2 from './img/social media-02.png'
 import media3 from './img/social media-03.png'

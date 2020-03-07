@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 #Board{
   cursor: url(./components/images/cursor.png)
-=======
-.App {
-  text-align: center;
 }
 
 .App-logo {
@@ -47,5 +43,4 @@
   to {
     transform: rotate(360deg);
   }
->>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 }

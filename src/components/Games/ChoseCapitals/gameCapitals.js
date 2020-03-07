@@ -1,13 +1,10 @@
 import React, { Component, Fragment } from 'react';
-<<<<<<< HEAD
 import Games from './gameCapitals.css';
 
-=======
 import media1 from './img/social media-01.png'
 import media2 from './img/social media-02.png'
 import media3 from './img/social media-03.png'
 import './chose.css'
->>>>>>> 664045d422373d4791591cf4a32855e9293f19c3
 //to put in a random order the array
 const Shuffle=(a)=>{
     var j, x, i;

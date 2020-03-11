@@ -106,7 +106,8 @@ export default class BigBoard extends React.Component {
 
   restartCounter = () => {
     this.setState ({
-      counter: 0
+      counter: 0,
+      teamChosen: false
     })
     this.delay = 2000
   }

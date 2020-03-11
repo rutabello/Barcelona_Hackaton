@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styled, {css} from 'styled-components';
-
+import "./SmallSquare.css";
 import './BigBoard.css'
 
 const SquareContainer = styled.div`
@@ -14,7 +14,7 @@ const SquareContainer = styled.div`
 const SmallSquare = props =>(
     // SmallSquare.state.display = false ? return counter : return counter + 1 and it changes back to false
     props.show
-        ? <SquareContainer top={props.top} left={props.left} id="Image">
+        ? <SquareContainer top={props.top} left={props.left} className="TeamImage">
             <img onClick={props.itemClicked} className="team-logo" src={props.logo}/>
         </SquareContainer>
         : null

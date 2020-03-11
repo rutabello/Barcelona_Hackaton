@@ -1,0 +1,111 @@
+.leaflet-container {
+    width: 100%;
+    height: 63vh;
+}
+
+.flag {
+    display: block;
+    font-size: 80px;
+}
+
+.counterText {
+    font-family: 'Neuton', serif;
+    box-shadow:inset 0px 0px 15px 3px #23395e;
+    background-color:#2e466e;
+    border-radius:17px;
+    border:1px solid #1f2f47;
+    display:inline-block;
+    cursor:pointer;
+    color:#ffffff;
+    font-family:Arial;
+    font-size:15px;
+    padding:6px 13px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #263666;
+    font-size: 15px;
+}
+
+.flagDisplay {
+    border: 3px solid #263666;
+    width: 20%;
+    border-radius: 30%;
+    margin-left: 40%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    font-size: 25px;
+}
+
+.flagDisplay p {
+    margin-bottom: 0;
+}
+
+.exitButton {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 126px;
+    height: 29px;
+    text-align: center;
+    background-color: #263666;
+    color: #FFFFFF;
+    border:#263666 ;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1em;
+    opacity: 1;
+    text-decoration: none;
+}
+
+.exitButton a {
+    color: white;
+    text-decoration: none;
+}
+
+.mapContent {
+    position: relative;
+}
+
+@media (max-width: 700px) {
+    .flagDisplay {
+        border: 3px solid #263666;
+        width: 40%;
+        border-radius: 30%;
+        margin-left: 30%;
+        margin-bottom: 2%;
+        padding-top: 2%;
+        font-size: 15px;
+        height: 36%;
+    }  
+
+    .exitButton {
+        width: 63px;
+        height: 15px;
+        font-size: 7px;
+    }
+
+    .counterText {
+        margin-bottom: 8px;
+    }
+
+    .flag {
+        font-size: 30px;
+    }
+
+    .flagDisplay {
+        border: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .flagDisplay p {
+        font-size: 10px;
+        margin-top: 15px;
+        margin-right: 5px;
+    }
+
+    .counterText {
+        display: none;
+    }
+
+
+}

@@ -125,21 +125,23 @@ export default class BigBoard extends React.Component {
     render() {
       return ( 
         <Fragment>
+        <div className='pantalla'>
           {this.state.teamChosen == false 
           ? <SelectTeam printName={this.printName} imageList={this.state.imageList}/>
           : <div>
-          <BigContainer>
-          { 
-            this.state.smallSquaresArray.map((x, index) => 
-            //turns show to true if index of the smallsquare == the squareIndex rendered by the chooseSmallSquare function
-                <SmallSquare top={x.top} left={x.left} logo={this.state.logoSelected} show={index === this.state.squareIndex} itemClicked={this.itemClicked}/>
-            )}
-          </BigContainer>
-          <p>{this.state.counter}</p>
-          <button onClick={this.onClickStart}>START</button>
-          <button onClick={this.restartCounter}>RESET THE RESULT</button>
+                <BigContainer id="squarecontainer">
+                  { 
+                    this.state.smallSquaresArray.map((x, index) => 
+                    //turns show to true if index of the smallsquare == the squareIndex rendered by the chooseSmallSquare function
+                        <SmallSquare top={x.top} left={x.left} logo={this.state.logoSelected} show={index === this.state.squareIndex} itemClicked={this.itemClicked}/>
+                    )}
+                </BigContainer>
+                <p>{this.state.counter}</p>
+                <button onClick={this.onClickStart}>START</button>
+                <button onClick={this.restartCounter}>RESET THE RESULT</button>
           </div>
         }
+        </div>
         </Fragment>
       )
     }

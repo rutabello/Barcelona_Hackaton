@@ -5,7 +5,39 @@
 */
 
 .team-logo{
-  width:150px;
-  height: 150px;
+  width: 85px;
+  height: 85px;
   background-color: red;
 }
+
+.globalContainer {
+  background: #043A40 0% 0% no-repeat padding-box;
+  color: white;
+}
+
+.pantalla{
+  height: 95vh;
+  display: inline-block;
+  text-align: center;
+  cursor: url(../ClickKill/images/hit.png);
+}
+
+#Image {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 86px;
+  grid-auto-rows: 20%;
+  grid-template-areas: 
+    "a a a a b"
+    "a a a a b"
+    "c c c c d"
+    "c c c c d"
+    "c c c c d";
+  align-items: start;
+  position: relative;
+}
+
+#squarecontainer {
+  width: 100%;
+}
+

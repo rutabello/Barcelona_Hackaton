@@ -5,7 +5,8 @@ import Footer from './components/Footer/Footer'
 import AppCapitals from './components/Games/ChoseCapitals/appCapitals';
 import ButtonUserLogged from './components/ButtonUserLogged/ButtonUserLogged'
 import UserProfile from './components/UserProfile/userprofile'
-import DropdownCategories from './components/DropdownCategories/dropdown';
+import DropdownCategories from './components/DropdownCategories/dropdown'
+import GeoChallenge from './components/Games/GeoChallenge';
 import { Switch, Route, Link} from 'react-router-dom';
 import ButtonGames from './components/ButtonGames/buttonGames';
 import BigBoard from './components/Games/ClickKill/BigBoard'
@@ -16,9 +17,6 @@ const UserExample = {
   username: "Pepito",
   age: '28',
   points: 20
-
-
-
 };
 
 class App extends Component{
@@ -59,6 +57,9 @@ class App extends Component{
       </Route>
       <Route path='/cityplay'>
       <AppCapitals/>
+      </Route>
+      <Route path='/geochallange'>
+      <GeoChallenge />
       </Route>
       <Route path='/tacleclick'>
       <BigBoard />
